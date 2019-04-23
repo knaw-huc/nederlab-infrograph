@@ -1,0 +1,41 @@
+<div class="hcFormStack hcMarginBottom5">
+  <div class="hcStackInfo">
+    <h2>{{stackName}}</h2>
+    <div class="hcTxtColorGreyMid">{{stackDescription}}</div>
+  </div>
+
+  <div class="hcStackFormItems">
+    {{> comp-form-item
+          formItemLabel="Dataset name"
+          formItemFeedbackText=""
+          formItemFeedbackType=""
+          elemInput=true
+          elemId="f1"
+        }}
+
+    {{> comp-form-item
+          formItemLabel="Dataset type"
+          formItemFeedbackText=""
+          formItemFeedbackType=""
+          elemSelect=true
+          elemId="f2"
+        }}
+
+    {{> comp-form-item
+          formItemLabel="Curator"
+          formItemFeedbackText=""
+          formItemFeedbackType=""
+          elemSelect=true
+          elemId="f3"
+        }}
+
+    {{> comp-form-item
+          formItemLabel="Description"
+          formItemFeedbackText=""
+          formItemFeedbackType=""
+          elemTextArea=true
+          elemId="f3"
+        }}
+
+  </div>
+</div>

@@ -1,0 +1,16 @@
+<div id="searresults">
+  <div class="hcList">
+    <div class="hcListHeader">
+      <div class="hcSmallTxt hcTxtColorGreyMid hcListItemLong">File</div>
+      <div class="hcSmallTxt hcTxtColorGreyMid">Type</div>
+      <div class="hcSmallTxt hcTxtColorGreyMid">User</div>
+      <div class="hcSmallTxt hcTxtColorGreyMid">Date</div>
+    </div>
+  </div>
+
+  <ul class="hcList">
+    {{#each fileList}}
+      {{> list-item-file }}
+    {{/each}}
+  </ul>
+</div>

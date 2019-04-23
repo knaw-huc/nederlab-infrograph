@@ -1,0 +1,38 @@
+<div class="hcContentContainer bgColorBrand1 hcMarginBottom1">
+  <header class=" hcPageHeaderSimple hcBasicSideMargin">
+    <a href="" class="hcBrand">
+      <div class="hcBrandLogo"><img src="images/{{logo}}" class="logo"></div>
+    </a>
+
+    <nav>
+      <a href="">All datasets</a>
+      <a href="">About</a>
+    </nav>
+  </header>
+</div>
+<div class="hcContentContainer hcMarginBottom5 hcBorderBottom">
+  <div class="hcBarDataset hcBasicSideMargin">
+    <span>
+      <span class="hcSmallTxt hcTxtColorGreyMid">Dataset</span>
+      <select class="" name="">
+        {{#each datasets}}
+          <option value="">{{name}}</option>
+        {{/each}}
+      </select>
+
+    </span>
+    <span>
+      <span class="hcSmallTxt hcTxtColorGreyMid"> Collections</span>
+      <select class="" name="">
+        {{#each dataset.collections}}
+          <option value="">{{collectionName}}</option>
+        {{/each}}
+      </select>
+    </span>
+
+
+
+
+
+  </div>
+</div>

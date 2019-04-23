@@ -1,0 +1,8 @@
+{
+  "pages": [
+      {
+        "name": "nederlab-content",
+        "template": "nederlab"
+      }
+  ]
+}

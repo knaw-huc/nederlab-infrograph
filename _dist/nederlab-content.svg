@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/huc-util.css">
+      <link rel="icon" href="images/favi/favi-util.png" sizes="any" type="image/png">
+    <meta property="og:url"           content=".html" />
+    <meta property="og:type"          content="article" />
+    <meta property="og:title"         content="" />
+    <meta property="og:description"   content="" />
+    <meta property="og:image"         content="" />
+  </head>
+  <body>
+
+<div class="hcLayoutBasicMainFixedAside">
+  <aside class="hcLayoutAside">
+    <div class="asideWithProductBar">
+      <div class="hcProductBar bgColorBrand1">
+        <div class="hcHeadSpace"><img src="images/" alt="logo KNAW Humanities Cluster" class="logo"></div>
+      
+        <nav>
+          
+        </nav>
+      
+      
+      
+      </div>
+      <div class="colorBgGrey hcBlockScroll hcBasicSideMargin">
+        <div class="hcHeadSpace">
+          Digital Web Centre <br>for the History of Science
+        </div>
+        <!-- <div class="hcLoginInfo">
+          Bas Doppen
+        </div> -->
+
+        <nav id="navigationFromHeaders" class="navigation hcAlignVertical">
+        <a href="#"><em>Collections</em></a>
+        <a href="#">Places</a>
+        <a href="#">ProvenanceType</a>
+        <a href="#">Education</a>
+        <a href="#">Biography</a>
+        <a href="#">Membership</a>
+        <a href="#">Authorship</a>
+        <a href="#">Persons</a>
+        <button>Add collection</button>
+
+
+        </nav>
+      </div>
+    </div>
+  </aside>
+
+
+
+  <div class="hcLayoutMain hcContentContainer hcMarginBottom15">
+    <div class="hcHeadSpace hcBasicSideMargin">
+      <h1>Edit DWC dataset</h1>
+    </div>
+
+
+    <div class="hcForm hcBasicSideMargin">
+      <!--  Form stack-->
+      <div class="hcFormStack hcMarginBottom5">
+        <div class="hcStackInfo">
+          <h2>Dataset</h2>
+          <div class="hcTxtColorGreyMid">Give other researchers information about your dataset.</div>
+        </div>
+      
+        <div class="hcStackFormItems">
+          <div class="hcFormItemRow hcMarginBottom2">
+            <div class="hcFormItem ">
+              <label class="hcLabel" for="f1">Dataset name</label>
+          
+                <input type="text" id="f1" class="hcFeedback hcpr">
+          
+          
+          
+          
+          
+          
+          
+          
+              <div class="hcSmallTxt hcTxtColorGreyMid"></div>
+            </div>
+          
+          
+            <div class="hcFormItemExtra hcSmallTxt">
+              <div class="hcProvenanceComp">
+                <label class="hcLabel" for="provForf1">Provenance</label>
+                <textarea name="name" class="hcProvenanceText" id="provForf1"></textarea>
+              </div>
+            </div>
+          
+          </div>
+      
+          <div class="hcFormItemRow hcMarginBottom2">
+            <div class="hcFormItem ">
+              <label class="hcLabel" for="f2">Dataset type</label>
+          
+          
+          
+          
+                <select id="f2" class="hcFeedback hcpr">
+                  <option value="1">Select a type</option>
+                  <option value="2">Arnhem</option>
+                  <option value="3">The Hague</option>
+                </select>
+          
+          
+          
+          
+          
+              <div class="hcSmallTxt hcTxtColorGreyMid"></div>
+            </div>
+          
+          
+            <div class="hcFormItemExtra hcSmallTxt">
+              <div class="hcProvenanceComp">
+                <label class="hcLabel" for="provForf2">Provenance</label>
+                <textarea name="name" class="hcProvenanceText" id="provForf2"></textarea>
+              </div>
+            </div>
+          
+          </div>
+      
+          <div class="hcFormItemRow hcMarginBottom2">
+            <div class="hcFormItem ">
+              <label class="hcLabel" for="f3">Curator</label>
+          
+          
+          
+          
+                <select id="f3" class="hcFeedback hcpr">
+                  <option value="1">Select a type</option>
+                  <option value="2">Arnhem</option>
+                  <option value="3">The Hague</option>
+                </select>
+          
+          
+          
+          
+          
+              <div class="hcSmallTxt hcTxtColorGreyMid"></div>
+            </div>
+          
+          
+            <div class="hcFormItemExtra hcSmallTxt">
+              <div class="hcProvenanceComp">
+                <label class="hcLabel" for="provForf3">Provenance</label>
+                <textarea name="name" class="hcProvenanceText" id="provForf3"></textarea>
+              </div>
+            </div>
+          
+          </div>
+      
+          <div class="hcFormItemRow hcMarginBottom2">
+            <div class="hcFormItem ">
+              <label class="hcLabel" for="f3">Description</label>
+          
+          
+          
+          
+          
+          
+          
+                <textarea name="name" id="f3" class="hcFeedback hcpr"></textarea>
+          
+          
+              <div class="hcSmallTxt hcTxtColorGreyMid"></div>
+            </div>
+          
+          
+            <div class="hcFormItemExtra hcSmallTxt">
+              <div class="hcProvenanceComp">
+                <label class="hcLabel" for="provForf3">Provenance</label>
+                <textarea name="name" class="hcProvenanceText" id="provForf3"></textarea>
+              </div>
+            </div>
+          
+          </div>
+      
+        </div>
+      </div>
+      <div class="hcFormStack hcMarginBottom5">
+        <div class="hcStackInfo">
+          <h2>Account Settings</h2>
+          <div class="hcTxtColorGreyMid">Here you can update yor personal settings.</div>
+        </div>
+      
+        <div class="hcStackFormItems">
+          <div class="hcFormItemRow hcMarginBottom2">
+            <div class="hcFormItem ">
+              <label class="hcLabel" for="f1">Dataset name</label>
+          
+                <input type="text" id="f1" class="hcFeedback hcpr">
+          
+          
+          
+          
+          
+          
+          
+          
+              <div class="hcSmallTxt hcTxtColorGreyMid"></div>
+            </div>
+          
+          
+            <div class="hcFormItemExtra hcSmallTxt">
+              <div class="hcProvenanceComp">
+                <label class="hcLabel" for="provForf1">Provenance</label>
+                <textarea name="name" class="hcProvenanceText" id="provForf1"></textarea>
+              </div>
+            </div>
+          
+          </div>
+      
+          <div class="hcFormItemRow hcMarginBottom2">
+            <div class="hcFormItem ">
+              <label class="hcLabel" for="f2">Dataset type</label>
+          
+          
+          
+          
+                <select id="f2" class="hcFeedback hcpr">
+                  <option value="1">Select a type</option>
+                  <option value="2">Arnhem</option>
+                  <option value="3">The Hague</option>
+                </select>
+          
+          
+          
+          
+          
+              <div class="hcSmallTxt hcTxtColorGreyMid"></div>
+            </div>
+          
+          
+            <div class="hcFormItemExtra hcSmallTxt">
+              <div class="hcProvenanceComp">
+                <label class="hcLabel" for="provForf2">Provenance</label>
+                <textarea name="name" class="hcProvenanceText" id="provForf2"></textarea>
+              </div>
+            </div>
+          
+          </div>
+      
+          <div class="hcFormItemRow hcMarginBottom2">
+            <div class="hcFormItem ">
+              <label class="hcLabel" for="f3">Curator</label>
+          
+          
+          
+          
+                <select id="f3" class="hcFeedback hcpr">
+                  <option value="1">Select a type</option>
+                  <option value="2">Arnhem</option>
+                  <option value="3">The Hague</option>
+                </select>
+          
+          
+          
+          
+          
+              <div class="hcSmallTxt hcTxtColorGreyMid"></div>
+            </div>
+          
+          
+            <div class="hcFormItemExtra hcSmallTxt">
+              <div class="hcProvenanceComp">
+                <label class="hcLabel" for="provForf3">Provenance</label>
+                <textarea name="name" class="hcProvenanceText" id="provForf3"></textarea>
+              </div>
+            </div>
+          
+          </div>
+      
+          <div class="hcFormItemRow hcMarginBottom2">
+            <div class="hcFormItem ">
+              <label class="hcLabel" for="f3">Description</label>
+          
+          
+          
+          
+          
+          
+          
+                <textarea name="name" id="f3" class="hcFeedback hcpr"></textarea>
+          
+          
+              <div class="hcSmallTxt hcTxtColorGreyMid"></div>
+            </div>
+          
+          
+            <div class="hcFormItemExtra hcSmallTxt">
+              <div class="hcProvenanceComp">
+                <label class="hcLabel" for="provForf3">Provenance</label>
+                <textarea name="name" class="hcProvenanceText" id="provForf3"></textarea>
+              </div>
+            </div>
+          
+          </div>
+      
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+
+
+  </div>
+  <!--  sticky footer-->
+  <div class="hcStickyFooter hcContentContainer">
+    <div class="hcBasicSideMargin colorBgGreyPlus">
+      <div class="buttons-infoot">
+
+      </div>
+      <div class="buttons-infoot">
+        <button>Save</button>
+        <button>Cancel</button>
+      </div>
+
+    </div>
+
+
+  </div>
+</div>
+
+
+<script src="js/form.js"></script>
+  <!-- <script src="js/navigation.js" charset="utf-8"></script>
+  <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','https://www.google-analytics.com/analytics.js','ga'); ga('create', 'UA-90872465-1', 'auto'); ga('send', 'pageview');</script>
+  </body> -->
+</html>

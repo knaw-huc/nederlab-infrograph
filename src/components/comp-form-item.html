@@ -1,0 +1,41 @@
+<div class="hcFormItemRow hcMarginBottom2">
+  <div class="hcFormItem ">
+    <label class="hcLabel" for="{{elemId}}">{{formItemLabel}}</label>
+
+    {{!-- input Text --}}
+    {{#if elemInput}}
+      <input type="text" id="{{elemId}}" class="hcFeedback{{formItemFeedbackType}} hcpr">
+    {{/if}}
+
+
+
+    {{!-- input select --}}
+    {{#if elemSelect}}
+      <select id="{{elemId}}" class="hcFeedback{{formItemFeedbackType}} hcpr">
+        <option value="1">Select a type</option>
+        <option value="2">Arnhem</option>
+        <option value="3">The Hague</option>
+      </select>
+    {{/if}}
+
+
+
+    {{!-- input textarea --}}
+    {{#if elemTextArea}}
+      <textarea name="name" id="{{elemId}}" class="hcFeedback{{formItemFeedbackType}} hcpr"></textarea>
+    {{/if}}
+
+
+    <div class="hcSmallTxt hcTxtColorGreyMid">{{formItemFeedbackText}}</div>
+  </div>
+
+
+    {{!-- /extra --}}
+  <div class="hcFormItemExtra hcSmallTxt">
+    <div class="hcProvenanceComp">
+      <label class="hcLabel" for="provFor{{elemId}}">Provenance</label>
+      <textarea name="name" class="hcProvenanceText" id="provFor{{elemId}}"></textarea>
+    </div>
+  </div>
+
+</div>{{!-- / row --}}
