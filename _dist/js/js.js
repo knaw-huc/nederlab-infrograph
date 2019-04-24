@@ -38,11 +38,12 @@ xmlhttp.send();
 function timeLineLine(ammount, x, y, className) {
   var logicals = [0, 10, 100, 1000, 10000, 100000, 1000000, 10000000, 100000000, 100000000, 10000000000];
   var lineHeight = 10;
+  var blockHeight = 30;
 
   for (var i = 0; i < (logicals.length-1); i++) {
     console.log((ammount < logicals[i]) && (ammount > logicals[i+1]));
     if ((ammount > logicals[i]) && (ammount < logicals[i+1])) {
-      lineHeight = i*50;
+      lineHeight = i*blockHeight;
     }
 
   }
