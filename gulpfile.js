@@ -105,10 +105,10 @@ gulp.task('buildFromTemplates', function(done) {
           fileName = page.name.replace(/ +/g, '-').toLowerCase();
           template = page.template;
 
-      gulp.src('./src/templates/'+template+'.html')
+      gulp.src('./src/templates/'+template)
           .pipe(plumber())
           .pipe(handlebars(page, options))
-          .pipe(rename(fileName + ".svg"))
+          .pipe(rename(fileName))
           .pipe(useref())
           .pipe(gulp.dest(dst))
           .pipe(browserSync.stream());
@@ -118,8 +118,8 @@ gulp.task('buildFromTemplates', function(done) {
 
 
 gulp.task('copyFiles', function(done) {
-  return gulp.src([fAssets, fImages])
-      .pipe(gulp.dest(dst+'images'))
+  return gulp.src(['src/extra/**/*'])
+      .pipe(gulp.dest(dst))
 
 
   return gulp.src(fJs)

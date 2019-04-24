@@ -1,0 +1,99 @@
+{
+	"dataTotals": [{
+			"title": "collecties",
+			"number": 18
+		},
+		{
+			"title": "auteurs",
+			"number": 149577
+		},
+		{
+			"title": "titels",
+			"number": 74612639
+		},
+		{
+			"title": "woorden",
+			"number": 18496492857
+		},
+		{
+			"title": "annotatie",
+			"number": 95985948743
+		}
+
+	],
+	"dataCollections": [{
+		"KB kranten": 72073487,
+		"SoNaR": 2109678,
+		"DBNL": 345470,
+		"Staten-Generaal Digitaal": 172027,
+		"Geleerdenbrieven": 20263,
+		"Briefwisseling Heinsius": 18946,
+		"EDBO": 14337,
+		"CRM": 3806,
+		"Gekaapte brieven": 1951,
+		"Correspondentie Clusius": 1147,
+		"Brieven Van Gogh": 596,
+		"Beschrijyvinge Oostindische Compagnie": 513,
+		"Notulen Staten van Holland": 119,
+		"Acta Zuid-Holland": 92,
+		"Dagboek De Clercq": 56,
+		"Dagboeken De Beaufort": 45,
+		"Varia": 14
+	}],
+	"dataTimeline": [{
+			"eeuw": "geen publicatiejaar aangegeven",
+			"titels": 192,
+			"woorden": 107766
+		},
+		{
+			"eeuw": "1101 - 1200",
+			"titels": 0,
+			"woorden": 0
+		},
+		{
+			"eeuw": "1201 - 1300",
+			"titels": 6,
+			"woorden": 242040
+		},
+		{
+			"eeuw": "1301 - 1400",
+			"titels": 3804,
+			"woorden": 1207963
+		},
+		{
+			"eeuw": "1401 - 1500",
+			"titels": 10,
+			"woorden": 1177669
+		},
+		{
+			"eeuw": "1501 - 1600",
+			"titels": 86,
+			"woorden": 10250828
+		},
+		{
+			"eeuw": "1601 - 1700",
+			"titels": 66910,
+			"woorden": 66511840
+		},
+		{
+			"eeuw": "1701 - 1800",
+			"titels": 756991,
+			"woorden": 1082033878
+		},
+		{
+			"eeuw": "1801 - 1900",
+			"titels": 11774352,
+			"woorden": 6562313004
+		},
+		{
+			"eeuw": "1901 - 2000",
+			"titels": 26852400,
+			"woorden": 10138209345
+		},
+		{
+			"eeuw": "2001 - 2019",
+			"titels": 1989044,
+			"woorden": 631933792
+		}
+	]
+}
