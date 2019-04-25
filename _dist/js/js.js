@@ -3,7 +3,7 @@ var allData;
 var svgContent = '';
 var timelineYPos =500;
 var blockHeight = 30;
-var logicals = [0, 10, 100, 1000, 10000, 100000, 1000000, 10000000, 100000000, 100000000, 10000000000];
+var logicals = [0, 10, 100, 1000, 10000, 100000, 1000000, 10000000, 100000000, 1000000000, 10000000000];
 
 
 // get json
@@ -54,7 +54,7 @@ function timeLineLine(ammount, x, y, className) {
 
   for (var i = 0; i < (logicals.length-1); i++) {
     if ((ammount > logicals[i]) && (ammount < logicals[i+1])) {
-      strokeWidth = i*3;
+      strokeWidth = (i*.7)*(i*.7);
 
 
 
