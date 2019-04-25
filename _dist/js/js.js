@@ -56,15 +56,14 @@ function timeLineLine(ammount, x, y, className) {
     if ((ammount > logicals[i]) && (ammount < logicals[i+1])) {
       strokeWidth = (i*.7)*(i*.7);
 
+      var diff = ammount/logicals[i];
 
-
-
-      lineHeight = i*blockHeight;
+      lineHeight = (i*blockHeight)+((diff*blockHeight)/10);
     }
 
   }
 
-  return '<line x1="'+x+'" y1="'+y+'" x2="'+x+'" y2="'+(y-lineHeight)+'" class="timeLineLine '+className+'" stroke-width="'+strokeWidth+'" />';
+  return '<line x1="'+x+'" y1="'+y+'" x2="'+x+'" y2="'+(y-lineHeight)+'" class="timeLineLine '+className+'" stroke-width="'+strokeWidth+'" />'; 
 
 }
 
@@ -86,3 +85,6 @@ function timeLineLegend() {
 
   return output;
 }
+
+
+//https://www.amcharts.com/demos/logarithmic-scale/
