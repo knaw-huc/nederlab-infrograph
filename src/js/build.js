@@ -1,8 +1,10 @@
 var xmlhttp = new XMLHttpRequest();
 var allData;
 var svgContent = '';
-var timelineYPos =500;
+var timelineYPos =900;
+var collectionsYPos =330;
 var blockHeight = 30;
+var leftMargin = 80;
 var logicals = [0, 10, 100, 1000, 10000, 100000, 1000000, 10000000, 100000000, 1000000000, 10000000000];
 
 
@@ -16,24 +18,46 @@ xmlhttp.onreadystatechange = function() {
 
 
 
+
     // timeline data
     var timelineData = allData.dataTimeline;
-    var xCoor;
-    var yCoor;
+    var collectionsData = allData.dataCollections;
+    var xCoorTL;
+    var yCoorTL;
+    var xCoorCol;
+    var yCoorCol;
     var itemWidth = 43;
     var barSpace = 10;
 
+    svgContent=svgContent+timeLineLegend(collectionsYPos);
+    for (var h = 0; h < collectionsData.length; h++) {
+      itemWidth = 25;
+      xCoorCol =  leftMargin+(h*itemWidth);
+      yCoorCol  = collectionsYPos;
+
+      // collections
+
+      svgContent=svgContent+'<text x="'+(xCoorCol-10)+'" y="'+(yCoorCol+16)+'"  font-family="sans-serif" class="txt" text-anchor="end" dominant-baseline="central" transform="rotate(-45, '+xCoorCol+', '+yCoorCol+')" >'+collectionsData[h].name+'</text>'; //text-anchor="end" dominant-baseline="central" transform="rotate(-90, '+xCoor+', '+yCoor+')"
+      svgContent=svgContent+timeLineLine(collectionsData[h].val, xCoorCol, yCoorCol, 'lineTitle');
+
+
+    }
+
+
+
+
+    svgContent=svgContent+timeLineLegend(timelineYPos);
     for (var i = 0; i < timelineData.length; i++) {
+      itemWidth = 43;
+      xCoorTL =  leftMargin+(i*itemWidth);
+      yCoorTL  = timelineYPos;
 
-      xCoor =  80+(i*itemWidth);
-      yCoor  = timelineYPos;
+      // timelines
 
+      svgContent=svgContent+'<text x="'+xCoorTL+'" y="'+(yCoorTL+16)+'" class="txt" font-family="sans-serif" >'+timelineData[i].eeuwkort+'</text>'; //text-anchor="end" dominant-baseline="central" transform="rotate(-90, '+xCoor+', '+yCoor+')"
+      svgContent=svgContent+timeLineLine(timelineData[i].woorden, xCoorTL, yCoorTL, 'lineWord');
+      svgContent=svgContent+timeLineLine(timelineData[i].titels, (xCoorTL+barSpace), yCoorTL, 'lineTitle');
 
-
-      svgContent=svgContent+'<text x="'+xCoor+'" y="'+(yCoor+16)+'" class="small"  >'+timelineData[i].eeuwkort+'</text>'; //text-anchor="end" dominant-baseline="central" transform="rotate(-90, '+xCoor+', '+yCoor+')"
-      svgContent=svgContent+timeLineLine(timelineData[i].woorden, xCoor, yCoor, 'lineTitle');
-      svgContent=svgContent+timeLineLine(timelineData[i].titels, (xCoor+barSpace), yCoor, 'lineWord');
-      svgContent=svgContent+timeLineLegend();
 
     }
     document.getElementById("timeLine").innerHTML = svgContent;
@@ -63,24 +87,24 @@ function timeLineLine(ammount, x, y, className) {
 
   }
 
-  return '<line x1="'+x+'" y1="'+y+'" x2="'+x+'" y2="'+(y-lineHeight)+'" class="timeLineLine '+className+'" stroke-width="'+strokeWidth+'" />'; 
+  return '<line x1="'+x+'" y1="'+y+'" x2="'+x+'" y2="'+(y-lineHeight)+'" class="timeLineLine '+className+'" stroke-width="'+strokeWidth+'" />';
 
 }
 
 
 //create legend aside lines
-function timeLineLegend() {
+function timeLineLegend(y) {
 
   var output='123';
 
   var labelsList = logicals;
-  var x = 20;
-  var y= timelineYPos;
+  var x = leftMargin-30;
+
 
   for (var j = 0; j < labelsList.length; j++) {
 
-    output = output + '<line x1="'+x+'" y1="'+(y-(j*blockHeight))+'"  x2="'+(x+500)+'" y2="'+(y-(j*blockHeight))+'"       class="thinLine" />';
-    output = output + '<text x="'+x+'" y="'+(y-(j*blockHeight))+'" class="small">'+labelsList[j]+ '</text>';
+    output = output + '<line x1="'+x+'" y1="'+(y-(j*blockHeight))+'"  x2="'+(x+500)+'" y2="'+(y-(j*blockHeight))+'" class="thinLine" stroke-opacity="0.2" />';
+    //output = output + '<text x="'+x+'" y="'+(y-(j*blockHeight))+'" class="small">'+labelsList[j]+ '</text>';
   }
 
   return output;
