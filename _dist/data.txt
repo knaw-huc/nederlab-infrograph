@@ -84,7 +84,7 @@
 		},
 		{
 			"eeuw": "1701 - 1800",
-			"eeuwkort": "19",
+			"eeuwkort": "18",
 			"titels": 756991,
 			"woorden": 1082033878
 		},
