@@ -3,24 +3,28 @@
       {
         "name": "nederlab-content.svg",
         "template": "nederlab-content.svg",
-        "dataTotals": [
-                {
-                  "title": "collecties",
-                  "number": 18},
-                  {
-                    "title": "auteurs",
-                "number": 149577},
-                {
-                  "title": "titels",
-                "number": 74612639},
-                {
-                  "title": "woorden",
-                "number": 18496492857},
-                {
-                  "title": "annotatie",
-                "number": 95985948743}
+        "dataTotals": [{
+      			"title": "collecties",
+      			"number": 18
+      		},
+      		{
+      			"title": "auteurs",
+      			"number": 149577
+      		},
+      		{
+      			"title": "titels",
+      			"number": 74612639
+      		},
+      		{
+      			"title": "woorden",
+      			"number": 18496492857
+      		},
+      		{
+      			"title": "annotatie",
+      			"number": 95985948743
+      		}
 
-            ],
+      	],
         "dataCollections": [
           {
             "KB kranten": 72073487,
@@ -103,7 +107,28 @@
 
       {
         "name": "index.html",
-        "template": "index.html"
+        "template": "index.html",
+        "dataTotals": [{
+      			"title": "collecties",
+      			"number": 18
+      		},
+      		{
+      			"title": "auteurs",
+      			"number": 149577
+      		},
+      		{
+      			"title": "titels",
+      			"number": 74612639
+      		},
+      		{
+      			"title": "woorden",
+      			"number": 18496492857
+      		},
+      		{
+      			"title": "annotatie",
+      			"number": 95985948743
+      		}
+      	]
       }
   ]
 }
